@@ -8,7 +8,7 @@ This system provides real-time monitoring and control for astronomical observati
 - **ALPY 600** spectrograph camera
 - **QHY 16200A** CCD camera
 - **Nikon D5600** DSLR camera
-- **TESS-W/TESS-W4C** photometers (optional)
+- **TESS-W/TESS-W4C** photometers
 
 The architecture consists of:
 - **Remote Stations** (Jetson devices) running camera monitoring scripts
