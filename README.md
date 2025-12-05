@@ -1,6 +1,6 @@
 # Project Description
 
-Scientific and engineering group directed by Dr. José Robles focused on the first long-term light-pollution research program in a tropical environment across the Panama Canal Basin. The group develops remote-sensing methods, ground-based photometric and spectrometric instrumentation, and electronic/software control systems. Research activities integrate light pollution with environmental processes, biological interactions, and socioeconomic indicators such as GDP/PIB. 
+TropicalALAN_Lab_PTY is a research and engineering group dedicated to advancing the understanding of artificial light at night (ALAN) in tropical environments. The team operates the first multi-station monitoring network across the Panama Canal Basin, integrating photometric, spectrometric, and remote-sensing datasets. The group develops open, interoperable software and automated hardware systems to quantify the environmental, atmospheric, biological, and economic implications of light pollution, including links with regional GDP/PIB.
 
 # Interoperability Code 
 
