@@ -6,9 +6,9 @@ Scientific and engineering group directed by Dr. José Robles focused on the fir
 
 The interoperability framework deployed here enables continuous operation of the INDICATIC–UTP substation and the automatic transmission of calibrated data to the institutional Network-Attached Storage (NAS). The system manages communication with multiple scientific instruments operating concurrently:
 
-QHY 16200A (UV, B, V, R, IR photometry)
+QHY 16200A (UV, B, V, R, and IR all-sky images)
 
-Nikon D5600 (RGB photometry and all-sky imaging)
+Nikon D5600 (RGB all-sky imaging)
 
 ALPY 600 spectrometer
 
