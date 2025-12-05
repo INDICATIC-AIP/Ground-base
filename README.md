@@ -1,8 +1,19 @@
-# Interoperability code
+# Project Description
 
-The interoperability code has been developed for the first project on light pollution in a tropical environment through the Panama canal basing.
-The interoperability code developed in this GitHub repository is designed to transmit data from various devices connected to multiple substations directly to a NAS (Network-attached storage) located at INDICATIC AIP server. This is the code for the INDICATIC-UTP substation. These devices include the QHY 16200A, Nikon D5600, Alpy 600, TESS-W, and TESS-W4C.
-The developed code is distributed across four directories listed below, each containing integrated links and handling a distinct part of the interoperability code. These are further detailed within their respective locations.
+Scientific and engineering group directed by Dr. José Robles focused on the first long-term light-pollution research program in a tropical environment across the Panama Canal Basin. The group develops remote-sensing methods, ground-based photometric and spectrometric instrumentation, and electronic/software control systems. Research activities integrate light pollution with environmental processes, biological interactions, and socioeconomic indicators such as GDP/PIB.
+
+# Interoperability Code for the INDICATIC–UTP Light Pollution Substation (Panama Canal Basin)
+
+This repository contains the interoperability and data-transfer system developed under the first scientific project on light pollution in a tropical environment across the Panama Canal Basin.
+The code forms part of an integrated research program linking artificial light at night (ALAN) with atmospheric conditions, biological interactions, ecosystem processes, and potential macroeconomic impacts (GDP/PIB) associated with inefficient lighting and energy use in tropical urban–forest interfaces.
+The interoperability framework deployed here enables continuous operation of the INDICATIC–UTP substation and the automatic transmission of calibrated data to the institutional Network-Attached Storage (NAS) at INDICATIC AIP. The system manages communication with multiple scientific instruments operating concurrently:
+
+_QHY 16200A (UV, B, V, R, IR photometry)
+_Nikon D5600 (RGB photometry and all-sky imaging)
+_ALPY 600 spectrometer
+_TESS-W photometer (broadband)
+_TESS-W4C photometer (RGBIR channels)
+
 
 1. [AutoRun](https://github.com/INDICATIC-AIP/FID074-Estaciones/tree/main/AutoRun)
 2. [INDIcode](https://github.com/INDICATIC-AIP/FID074-Estaciones/tree/main/INDIcode)
