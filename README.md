@@ -75,12 +75,13 @@ Replace "indicatice2" with the actual station hostname.
 Run the script:
 
 python3 station_rename.py
+
 whoami
 
 # Contact Information
 
 For scientific and technical inquiries about this project:
-Jose Robles
+Dr. Jose Robles
 jrobles@indicatic.org.pa
 
 For questions about the code after reading the READMEs:
