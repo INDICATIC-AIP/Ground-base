@@ -2,7 +2,7 @@
 
 Scientific and engineering group directed by Dr. José Robles focused on the first long-term light-pollution research program in a tropical environment across the Panama Canal Basin. The group develops remote-sensing methods, ground-based photometric and spectrometric instrumentation, and electronic/software control systems. Research activities integrate light pollution with environmental processes, biological interactions, and socioeconomic indicators such as GDP/PIB. 
 
-# Interoperability Code for the INDICATIC–UTP Light Pollution Substation (Panama Canal Basin)
+# Interoperability Code 
 
 The interoperability framework deployed here enables continuous operation of the INDICATIC–UTP substation and the automatic transmission of calibrated data to the institutional Network-Attached Storage (NAS). The system manages communication with multiple scientific instruments operating concurrently:
 
@@ -22,43 +22,61 @@ TESS-W/TESS-4C
 
 --------------------------------------------------------------------
 
-## The following folders : "AutoRun" "INDIcode" "NAScode" and "code", containing different components necessary for the interoperability code to function.
+## Components ("AutoRun", "INDIcode", "NAScode", and "code").
 
 ### [AutoRun](https://github.com/INDICATIC-AIP/FID074-Estaciones/tree/main/AutoRun)
 
-_AutoRun folder contains all scripts related to the automation of the stations, allowing remote control, error detection, and other operational tasks_
+This folder contains all scripts related to the automation of the stations, allowing remote control, error detection, and other operational tasks.
 
 ### [INDIcode](https://github.com/INDICATIC-AIP/FID074-Estaciones/tree/main/INDIcode)
 
-_INDIcode folder contains parts of the library sourced from GitHub (https://github.com/indigo-astronomy/indigo/blob/master/indigo_drivers/ccd_qhy/bin_externals/qhyccd/include/qhyccd.h). These components enable the .cpp scripts to function properly and control the cameras QHY 16200A and Alpy 600._
+This folder contains parts of the library sourced from the INDIGO Astronomy project: (https://github.com/indigo-astronomy/indigo/blob/master/indigo_drivers/ccd_qhy/bin_externals/qhyccd/include/qhyccd.h). These components enable the C++ scripts to function properly and control the QHY 16200A and ALPY 600 devices.
 
 ### [NAScode](https://github.com/INDICATIC-AIP/FID074-Estaciones/tree/main/NAScode)
 
-_The NAScode folder contains the different codes to achieve interoperability on the NAS side. Additionally, the decryption of files is performed here to ensure integrity. Furthermore, other scripts in this folder manage the organization of various files._
+This folder contains the scripts used to achieve interoperability on the NAS side. File decryption and organization tasks are managed here to ensure data integrity.
 
 ### [code](https://github.com/INDICATIC-AIP/FID074-Estaciones/tree/main/code)
 
-_code folder contains the different codes for interoperability within the Interop_code folder. On the other hand, the CryptageC folder holds all the scripts responsible for encryption, ensuring data integrity on the NAS side and securing the information._
-
-_Several folders and .txt files can also be seen. These are used by various scripts from Interop_code and CryptageC to share information, determine which repository on the NAS the data should be sent to, and handle related processes._
+This folder contains the interoperability scripts within the "Interop_code" directory. The "CryptageC" folder includes all encryption scripts used to secure data transmitted to the NAS.
+Additional folders and .txt files serve as shared resources for determining NAS destinations, exchanging status information, and supporting interoperability processes.
 
 --------------------------------------------------------------------
 
-In each README file within the four folders, the functions of all scripts are explained globally and each README file must be read and the command (under **Installation Instructions**) executed if you want to install the whole interoperability code on a station to be operational. Some details may be further elaborated within individual scripts. Additionally, the README files specify the different libraries used and required on the stations to ensure proper functionality. Here is an exemple of order you can follow to install all the interoperability code: [code](https://github.com/INDICATIC-AIP/FID074-Estaciones/tree/main/code), [INDIcode](https://github.com/INDICATIC-AIP/FID074-Estaciones/tree/main/INDIcode), [AutoRun](https://github.com/INDICATIC-AIP/FID074-Estaciones/tree/main/AutoRun) , but before you must assure to have linux installed on the Jetson, to do so, you can refer to the [Initial Setup Guide for Jetson Orin Nano Developer Kit.](https://www.jetson-ai-lab.com/initial_setup_jon.html), Once this GitHub repository has been cloned into the station, you must extract the folders `code`, `INDIcode`, and `AuToRun` and place them on the `Desktop`, once this is done, you can delete the folder `NAScode`, as it is intended for the NAS side, after that, you can remove the cloned folder, which should be named `FID074-Estaciones`, you are now ready to begin the installation properly.
+# Installation Instructions
+Each folder contains a README explaining the functions of the scripts and specifying the required libraries. To fully install the interoperability code on a station, you must read and execute the instructions in all four folders.
+A recommended installation order is:
 
-Once the installation is completed, to change the path of each file so the code can work on the station, open the script. `station_rename.py` that should be located on the `Desktop`, the three lines are commented `# new_content = re.sub("indicatic-e1", "indicatice2", content)` `# with open(filename, 'w', encoding='utf-8') as f:` `#     f.write(new_content)`, uncomment them and change `indicatice2` by the same of the station, and then execute the code with the command :
+1. code — https://github.com/INDICATIC-AIP/FID074-Estaciones/tree/main/code
+2. INDIcode — https://github.com/INDICATIC-AIP/FID074-Estaciones/tree/main/INDIcode
+3. AutoRun — https://github.com/INDICATIC-AIP/FID074-Estaciones/tree/main/AutoRun
 
-```bash
+Before installation, ensure Linux is properly installed on the Jetson system. Guidance:
+1. Initial Setup Guide for Jetson Orin Nano:
+2. https://www.jetson-ai-lab.com/initial_setup_jon.html
+   
+After cloning this repository on the station:
+1. Move the folders "code", "INDIcode", and "AutoRun" to the Desktop.
+2. Delete the folder "NAScode" (NAS-side only).
+3. Delete the cloned folder "FID074-Estaciones" once extraction is complete.
+
+You can now begin installation following each module’s README.
+
+# Configuring the Station Name
+To ensure the code uses the correct internal paths:
+1. On the Desktop, open the script named station_rename.py.
+2. Uncomment the following three lines:
+   # new_content = re.sub("indicatic-e1", "indicatice2", content)
+# with open(filename, 'w', encoding='utf-8') as f:
+#     f.write(new_content)
+
+Replace "indicatice2" with the actual station hostname.
+Run the script:
+
 python3 station_rename.py
-```
-If you want to know what is the name of the station use the command :
-
-```bash
 whoami
-```
-For scientific and technical inquiries about this project, contact
-José Robles – jrobles@indicatic.org.pa
 
+# Contacts
 If you have questions after reading the README files or need clarification on how the code works, contact
 José Jaén – jose.jaenj08@hotmail.com
 Alexandre Olivie – alexandre.olivie@bordeaux-inp.fr
