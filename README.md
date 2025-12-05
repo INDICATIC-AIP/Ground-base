@@ -66,9 +66,10 @@ You can now begin installation following each module’s README.
 To ensure the code uses the correct internal paths:
 1. On the Desktop, open the script named station_rename.py.
 2. Uncomment the following three lines:
-   # new_content = re.sub("indicatic-e1", "indicatice2", content)
-# with open(filename, 'w', encoding='utf-8') as f:
-#     f.write(new_content)
+
+ new_content = re.sub("indicatic-e1", "indicatice2", content)
+ with open(filename, 'w', encoding='utf-8') as f:
+ f.write(new_content)
 
 Replace "indicatice2" with the actual station hostname.
 Run the script:
@@ -76,10 +77,18 @@ Run the script:
 python3 station_rename.py
 whoami
 
-# Contacts
-If you have questions after reading the README files or need clarification on how the code works, contact
-José Jaén – jose.jaenj08@hotmail.com
-Alexandre Olivie – alexandre.olivie@bordeaux-inp.fr
+# Contact Information
 
-If you are interested in communication, outreach, or environmental consequences of light pollution, contact
-Alma Rivera – arivera@indicatic.org.pa
+For scientific and technical inquiries about this project:
+Jose Robles
+jrobles@indicatic.org.pa
+
+For questions about the code after reading the READMEs:
+Jose Jaen
+jose.jaenj08@hotmail.com
+Alexandre Olivie
+alexandre.olivie@bordeaux-inp.fr
+
+For environmental communication or outreach regarding light pollution:
+Alma Rivera
+arivera@indicatic.org.pa
