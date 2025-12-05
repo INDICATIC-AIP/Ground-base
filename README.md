@@ -1,6 +1,6 @@
 # Project Description
 
-Scientific and engineering group directed by Dr. José Robles focused on the first long-term light-pollution research program in a tropical environment across the Panama Canal Basin. The group develops remote-sensing methods, ground-based photometric and spectrometric instrumentation, and electronic/software control systems. Research activities integrate light pollution with environmental processes, biological interactions, and socioeconomic indicators such as GDP/PIB.
+Scientific and engineering group directed by Dr. José Robles focused on the first long-term light-pollution research program in a tropical environment across the Panama Canal Basin. The group develops remote-sensing methods, ground-based photometric and spectrometric instrumentation, and electronic/software control systems. Research activities integrate light pollution with environmental processes, biological interactions, and socioeconomic indicators such as GDP/PIB. 
 
 # Interoperability Code for the INDICATIC–UTP Light Pollution Substation (Panama Canal Basin)
 
@@ -56,5 +56,12 @@ If you want to know what is the name of the station use the command :
 ```bash
 whoami
 ```
+For scientific and technical inquiries about this project, contact
+José Robles – jrobles@indicatic.org.pa
 
-If you have any questions after reading the README files or need clarification on how the code functions, feel free to reach out alexandre.olivie@bordeaux-inp.fr or jose.jaenj08@hotmail.com
+If you have questions after reading the README files or need clarification on how the code works, contact
+José Jaén – jose.jaenj08@hotmail.com
+Alexandre Olivie – alexandre.olivie@bordeaux-inp.fr
+
+If you are interested in communication, outreach, or environmental consequences of light pollution, contact
+Alma Rivera – arivera@indicatic.org.pa
