@@ -11,9 +11,9 @@ The interoperability framework deployed here enables the continuous operation of
 
 QHY 16200A (UV, B, V, R, and IR all-sky images)
 
-Nikon D5600 (RGB all-sky imaging)
+Nikon D5600 (RGBI all-sky imaging)
 
-ALPY 600 spectrometer
+ALPY 600 spectrometer (350 nm to 800 nm)
 
 TESS-W/TESS-4C
 
