@@ -1,0 +1,30 @@
+# ============================================
+# ARCHIVOS DE CIFRADO - TODO EL SISTEMA
+# ============================================
+# Carpeta completa de cifrado
+code/CryptageC/
+
+# Archivos de implementación de cifrado en NAScode
+NAScode/difffunction.c
+NAScode/difffunction.h
+NAScode/uncaesar.c
+NAScode/unxor.c
+NAScode/mainTreatment.c
+NAScode/mainTreatment
+NAScode/sendShamirs.c
+NAScode/shamirs.py
+NAScode/global.h
+NAScode/Hash.txt
+NAScode/ShamirsParts.txt
+
+# Carpetas temporales
+NAScode/tmpFile/
+
+# Archivos compilados y objetos
+*.o
+*.out
+*.exe
+my_program
+
+
+README/

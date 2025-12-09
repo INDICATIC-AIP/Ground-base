@@ -5,6 +5,16 @@
 
 TropicalALAN_Lab_PTY is a research and engineering group dedicated to advancing the understanding of artificial light at night (ALAN) in tropical environments. The team operates the first multi-station monitoring network across the Panama Canal Basin, integrating photometric, spectrometric, and remote-sensing datasets. The group develops open, interoperable software and automated hardware systems to quantify the environmental, atmospheric, biological, and economic implications of light pollution, including links with regional GDP/PIB.
 
+## ⚠️ Security Notice - Encryption Implementation
+
+**IMPORTANT:** For security reasons, the encryption and decryption implementation files have been excluded from this repository. 
+
+**You must develop your own encryption system** to secure data transmission between stations and NAS.
+
+The repository provides the framework and integration points, but the actual cryptographic implementation is your responsibility. This ensures each deployment has unique security characteristics.
+
+Refer to the `code/README.md` and `NAScode/README.md` for more details on missing components.
+
 # Interoperability Code 
 
 The interoperability framework deployed here enables the continuous operation of the INDICATIC–UTP substation, where multiple scientific instruments are directly connected to an NVIDIA Jetson Nano for on-site control and pre-processing. Calibrated data are automatically transmitted to an institutional Network-Attached Storage (NAS). The system manages concurrent communication with multiple scientific instruments operating in parallel:

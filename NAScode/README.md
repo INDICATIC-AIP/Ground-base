@@ -1,6 +1,29 @@
 # NAScode  
 
-This section contains the interoperability code from the NAS side. Here, the reverse of cryptography is mainly used to retrieve information from the hash obtained in the `Hash.txt` file. This file contains the payload hash on the first line and the info hash on the second line.  
+This section contains the interoperability code from the NAS side. Here, the reverse of cryptography is mainly used to retrieve information from the hash obtained in the `Hash.txt` file. This file contains the payload hash on the first line and the info hash on the second line.
+
+## ⚠️ Security Notice - Decryption Implementation Required
+
+**IMPORTANT:** The decryption implementation files are **NOT included** in this repository for security reasons.
+
+### What You Need to Do:
+
+You **MUST implement your own decryption system** that mirrors your station's encryption implementation. Your decryption code should:
+
+1. Read encrypted data from the `tmpFile/` directory
+2. Process and decrypt the data
+3. Verify data integrity
+4. Generate output compatible with the NAS workflow
+
+### Integration Points:
+
+The decryption executable is called by:
+- `fileTreatment.sh` - Processes incoming encrypted files
+- `main.sh` - Orchestrates the decryption workflow
+
+Ensure your `mainTreatment` executable is compiled and placed in the `NAScode/` directory, or update the script paths accordingly.
+
+**Security Reminder:** Your decryption implementation must exactly match the encryption used on the station side. Keep all cryptographic implementations confidential and unique to your deployment.  
 
 In the `tmpFiles` folder, different files can be found:  
 

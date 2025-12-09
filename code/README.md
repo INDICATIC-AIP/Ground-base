@@ -2,6 +2,22 @@
 
 _In this README, payload refers to the data of a file sent, while info represents the information of the payload file, such as metadata._
 
+## ⚠️ Security Notice - Encryption Implementation Required
+
+**IMPORTANT:** The encryptation directory are **NOT included** in this repository for security reasons.
+
+### What You Need to Do:
+
+You **MUST implement your own encryption system** before using this interoperability framework. Your encryption implementation should:
+
+1. Process payload and metadata files
+2. Generate encrypted output compatible with the interoperability scripts
+3. Create necessary executable files that the scripts will call
+
+Update the paths in these scripts to match your encryption implementation location.
+
+**Security Reminder:** Each station deployment should use a unique encryption implementation to maintain security across the network.
+
 ### In this section, serial empty folders can be seen, here is their explanation:
 
 1. **RawQHYImg** : _The raw data from the QHYCCD are sent to this folder to be processed using the converter.py script._
