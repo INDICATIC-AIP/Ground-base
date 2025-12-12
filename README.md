@@ -17,7 +17,7 @@ Refer to the `code/README.md` and `NAScode/README.md` for more details on missin
 
 # Interoperability Code 
 
-The interoperability framework deployed here enables the continuous operation of the INDICATIC–UTP substation, where multiple scientific instruments are directly connected to an NVIDIA Jetson Nano for on-site control and pre-processing. Calibrated data are automatically transmitted to an institutional Network-Attached Storage (NAS). The system manages concurrent communication with multiple scientific instruments operating in parallel:
+The interoperability framework deployed here enables the continuous operation of the INDICATIC–UTP substation, where multiple scientific instruments are directly connected to an NVIDIA Jetson Nano for on-site control and pre-processing. Calibrated data are automatically transmitted to an institutional Network-Attached Storage (NAS). The system manages concurrent communication with multiple scientific instruments operating in parallel (docs/diagrams):
 
 QHY 16200A (UV, B, V, R, and IR all-sky images)
 
