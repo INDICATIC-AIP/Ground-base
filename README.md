@@ -28,28 +28,28 @@ ALPY 600 spectrometer (350 nm to 800 nm)
 TESS-W/TESS-4C
 
 
-1. [AutoRun](https://github.com/INDICATIC-AIP/FID074-Estaciones/tree/main/AutoRun)
-2. [INDIcode](https://github.com/INDICATIC-AIP/FID074-Estaciones/tree/main/INDIcode)
-3. [NAScode](https://github.com/INDICATIC-AIP/FID074-Estaciones/tree/main/NAScode)
-4. [code](https://github.com/INDICATIC-AIP/FID074-Estaciones/tree/main/code)
+1. [AutoRun](https://github.com/INDICATIC-AIP/Ground-based/tree/main/AutoRun)
+2. [INDIcode](https://github.com/INDICATIC-AIP/Ground-based/tree/main/INDIcode)
+3. [NAScode](https://github.com/INDICATIC-AIP/Ground-based/tree/main/NAScode)
+4. [code](https://github.com/INDICATIC-AIP/Ground-based/tree/main/code)
 
 --------------------------------------------------------------------
 
 ## Components ("AutoRun", "INDIcode", "NAScode", and "code").
 
-### [AutoRun](https://github.com/INDICATIC-AIP/FID074-Estaciones/tree/main/AutoRun)
+### [AutoRun](https://github.com/INDICATIC-AIP/Ground-based/tree/main/AutoRun)
 
 This folder contains all scripts related to the automation of the stations, allowing remote control, error detection, and other operational tasks.
 
-### [INDIcode](https://github.com/INDICATIC-AIP/FID074-Estaciones/tree/main/INDIcode)
+### [INDIcode](https://github.com/INDICATIC-AIP/Ground-based/tree/main/INDIcode)
 
 This folder contains parts of the library sourced from the INDIGO Astronomy project: (https://github.com/indigo-astronomy/indigo/blob/master/indigo_drivers/ccd_qhy/bin_externals/qhyccd/include/qhyccd.h). These components enable the C++ scripts to function properly and control the QHY 16200A and ALPY 600 devices.
 
-### [NAScode](https://github.com/INDICATIC-AIP/FID074-Estaciones/tree/main/NAScode)
+### [NAScode](https://github.com/INDICATIC-AIP/Ground-based/tree/main/NAScode)
 
 This folder contains the scripts used to achieve interoperability on the NAS side. File decryption and organization tasks are managed here to ensure data integrity.
 
-### [code](https://github.com/INDICATIC-AIP/FID074-Estaciones/tree/main/code)
+### [code](https://github.com/INDICATIC-AIP/Ground-based/tree/main/code)
 
 This folder contains the interoperability scripts within the "Interop_code" directory. The "CryptageC" folder includes all encryption scripts used to secure data transmitted to the NAS.
 Additional folders and .txt files serve as shared resources for determining NAS destinations, exchanging status information, and supporting interoperability processes.
@@ -60,9 +60,9 @@ Additional folders and .txt files serve as shared resources for determining NAS 
 Each folder contains a README explaining the functions of the scripts and specifying the required libraries. To fully install the interoperability code on a station, you must read and execute the instructions in all four folders.
 A recommended installation order is:
 
-1. code — https://github.com/INDICATIC-AIP/FID074-Estaciones/tree/main/code
-2. INDIcode — https://github.com/INDICATIC-AIP/FID074-Estaciones/tree/main/INDIcode
-3. AutoRun — https://github.com/INDICATIC-AIP/FID074-Estaciones/tree/main/AutoRun
+1. code — https://github.com/INDICATIC-AIP/Ground-based/tree/main/code
+2. INDIcode — https://github.com/INDICATIC-AIP/Ground-based/tree/main/INDIcode
+3. AutoRun — https://github.com/INDICATIC-AIP/Ground-based/tree/main/AutoRun
 
 Before installation, ensure Linux is properly installed on the Jetson system. Guidance:
 1. Initial Setup Guide for Jetson Orin Nano:
@@ -71,7 +71,7 @@ Before installation, ensure Linux is properly installed on the Jetson system. Gu
 After cloning this repository on the station:
 1. Move the folders "code", "INDIcode", and "AutoRun" to the Desktop.
 2. Delete the folder "NAScode" (NAS-side only).
-3. Delete the cloned folder "FID074-Estaciones" once extraction is complete.
+3. Delete the cloned folder "Ground-based" once extraction is complete.
 
 You can now begin installation following each module’s README.
 
